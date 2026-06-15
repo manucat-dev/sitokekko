@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="it" data-theme="light" class="bg-background">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#2563eb" />
+
+  <!-- SEO -->
+  <title>Alex Rivera — Portfolio Studente</title>
+  <meta name="description" content="Portfolio personale di Alex Rivera, studente delle superiori. Scopri hobby, percorsi PCTO, progetti di educazione civica e risultati accademici." />
+  <meta name="keywords" content="portfolio studente, PCTO, educazione civica, progetti, hobby, curriculum" />
+  <meta name="author" content="Alex Rivera" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Alex Rivera — Portfolio Studente" />
+  <meta property="og:description" content="Hobby, esperienze PCTO, progetti di educazione civica e lavori accademici." />
+  <meta property="og:image" content="/assets/profile.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="/css/styles.css" />
+
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Alex Rivera",
+    "jobTitle": "Studente",
+    "url": "/",
+    "image": "/assets/profile.png"
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Vai al contenuto principale</a>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="brand" aria-label="Alex Rivera home">
+        <span class="brand-mark" aria-hidden="true">AR</span>
+        <span>Alex Rivera</span>
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#home">Home</a>
+        <a href="#about">Chi sono</a>
+        <a href="#hobbies">Hobby</a>
+        <a href="#pcto">PCTO</a>
+        <a href="#civic">Educazione civica</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contatti</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" type="button" aria-label="Attiva/disattiva modalità scura">
+          <svg class="icon theme-icon-light" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+          <svg class="icon theme-icon-dark" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <button class="btn btn-outline btn-sm login-state-out" id="loginBtn" type="button">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4M10 17l5-5-5-5M15 12H3"/></svg>
+          Admin
+        </button>
+        <button class="btn btn-outline btn-sm login-state-in" id="logoutBtn" type="button">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9"/></svg>
+          Log out
+        </button>
+
+        <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-label="Apri/chiudi menu" aria-expanded="false">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="hero-status"><span class="status-dot" aria-hidden="true"></span> Disponibile per tirocini e collaborazioni</span>
+          <h1>Ciao, sono Alex Rivera<br /><span class="accent">studente &amp; creativo</span></h1>
+          <p class="hero-lead">Uno studente delle superiori curioso e appassionato di tecnologia, design e impatto sulla comunità. Benvenuto nel mio portfolio digitale di esperienze, progetti e traguardi.</p>
+          <div class="hero-cta">
+            <a href="#about" class="btn btn-primary">
+              Scopri di più
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </a>
+            <a href="#" class="btn btn-outline" id="downloadCv">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Scarica il CV
+            </a>
+          </div>
+        </div>
+        <div class="hero-photo-wrap reveal">
+          <img class="hero-photo" src="/assets/profile.png" alt="Ritratto di Alex Rivera" width="360" height="360" />
+          <div class="hero-badge">
+            <span class="num">4.0</span>
+            <span class="lbl">Media<br />Anno scolastico</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= STATS ================= -->
+    <section class="section section--alt" aria-label="Traguardi principali">
+      <div class="container">
+        <div class="stats-grid" id="statsGrid">
+          <div class="stat-card reveal"><div class="stat-num" data-count="12">0</div><div class="stat-label">Progetti completati</div></div>
+          <div class="stat-card reveal"><div class="stat-num" data-count="320">0</div><div class="stat-label">Ore di volontariato</div></div>
+          <div class="stat-card reveal"><div class="stat-num" data-count="5">0</div><div class="stat-label">Percorsi PCTO</div></div>
+          <div class="stat-card reveal"><div class="stat-num" data-count="8">0</div><div class="stat-label">Certificazioni</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Chi sono</span>
+          <h2 class="section-title">Conoscimi un po&apos; meglio</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>Ciao! Sono <strong>Alex Rivera</strong>, studente dell&apos;ultimo anno al Liceo Lincoln con un forte interesse per l&apos;informatica, il design e l&apos;impatto sociale. Amo trasformare le idee in cose che le persone possono davvero usare.</p>
+            <p>Che si tratti di sviluppare una piccola web app, fare volontariato nella mia comunità o imparare un nuovo strumento, metto curiosità e dedizione in tutto ciò che faccio. Il mio obiettivo è studiare <strong>Ingegneria Informatica</strong> all&apos;università e usare la tecnologia per risolvere problemi del mondo reale.</p>
+            <div class="skills-block">
+              <h3>Competenze &amp; Strumenti</h3>
+              <div class="skill-tags">
+                <span class="tag">HTML &amp; CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Python</span>
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">Public Speaking</span>
+                <span class="tag">Lavoro di squadra</span>
+                <span class="tag">Fotografia</span>
+                <span class="tag">Problem Solving</span>
+              </div>
+            </div>
+          </div>
+          <div class="reveal">
+            <h3 style="margin-bottom:20px;">Percorso di studi ed esperienze</h3>
+            <div class="timeline">
+              <div class="timeline-item">
+                <span class="timeline-date">2023 — Oggi</span>
+                <h4>Liceo Lincoln</h4>
+                <p>Indirizzo scientifico, con specializzazione in scienze applicate e informatica.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-date">2024</span>
+                <h4>Bootcamp di Sviluppo Web</h4>
+                <p>Completato un programma estivo intensivo sullo sviluppo front-end.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-date">2023</span>
+                <h4>Rappresentanza studentesca — Referente tecnico</h4>
+                <p>Gestione del sito degli eventi scolastici e delle comunicazioni digitali.</p>
+              </div>
+              <div class="timeline-item">
+                <span class="timeline-date">2022</span>
+                <h4>Membro del Club di Robotica</h4>
+                <p>Costruzione e programmazione di robot da competizione con un team di sei persone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HOBBIES ================= -->
+    <section class="section section--alt" id="hobbies">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">I miei hobby</span>
+          <h2 class="section-title">Le cose che amo fare nel tempo libero</h2>
+          <p class="section-subtitle">Una galleria delle attività che mi tengono ispirato ed equilibrato.</p>
+        </div>
+        <div style="margin-bottom:24px;" class="admin-only">
+          <button class="btn btn-primary btn-sm" data-add="hobby" type="button">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            Aggiungi hobby
+          </button>
+        </div>
+        <div class="card-grid" id="hobbiesGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= PCTO ================= -->
+    <section class="section" id="pcto">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Attività PCTO</span>
+          <h2 class="section-title">Esperienze scuola-lavoro</h2>
+          <p class="section-subtitle">Percorsi professionali, tirocini ed esperienze di apprendimento sul campo.</p>
+        </div>
+        <div class="exp-toolbar">
+          <div class="search-box">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="search" id="pctoSearch" placeholder="Cerca attività PCTO..." aria-label="Cerca attività PCTO" />
+          </div>
+          <button class="btn btn-primary btn-sm admin-only" data-add="pcto" type="button">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            Aggiungi attività
+          </button>
+        </div>
+        <div class="exp-list" id="pctoList"></div>
+      </div>
+    </section>
+
+    <!-- ================= CIVIC EDUCATION ================= -->
+    <section class="section section--alt" id="civic">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Educazione civica</span>
+          <h2 class="section-title">Progetti &amp; Impegno nella comunità</h2>
+          <p class="section-subtitle">Iniziative dedicate a cittadinanza, sostenibilità e responsabilità sociale.</p>
+        </div>
+        <div class="exp-toolbar">
+          <div class="search-box">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input type="search" id="civicSearch" placeholder="Cerca progetti civici..." aria-label="Cerca progetti civici" />
+          </div>
+          <button class="btn btn-primary btn-sm admin-only" data-add="civic" type="button">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            Aggiungi progetto
+          </button>
+        </div>
+        <div class="exp-list" id="civicList"></div>
+      </div>
+    </section>
+
+    <!-- ================= PORTFOLIO ================= -->
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Portfolio</span>
+          <h2 class="section-title">Progetti, traguardi &amp; certificazioni</h2>
+          <p class="section-subtitle">Una vetrina dei miei lavori accademici e progetti personali.</p>
+        </div>
+        <div class="exp-toolbar">
+          <div class="filter-pills" id="portfolioFilters" role="group" aria-label="Filtra progetti">
+            <button class="pill active" data-filter="all" type="button">Tutti</button>
+            <button class="pill" data-filter="project" type="button">Progetti</button>
+            <button class="pill" data-filter="certification" type="button">Certificazioni</button>
+            <button class="pill" data-filter="academic" type="button">Accademici</button>
+          </div>
+          <button class="btn btn-primary btn-sm admin-only" data-add="portfolio" type="button">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+            Aggiungi elemento
+          </button>
+        </div>
+        <div class="card-grid" id="portfolioGrid"></div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section section--alt" id="contact">
+      <div class="container">
+        <div class="section-head center">
+          <span class="eyebrow">Contatti</span>
+          <h2 class="section-title">Mettiamoci in contatto</h2>
+          <p class="section-subtitle">Hai una domanda o un&apos;opportunità? Sarei felice di sentirti.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="contact-row">
+              <span class="ci" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></svg></span>
+              <div><div class="label">Email</div><a class="value" href="mailto:alex.rivera@example.com">alex.rivera@example.com</a></div>
+            </div>
+            <div class="contact-row">
+              <span class="ci" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+              <div><div class="label">Telefono</div><span class="value">+1 (555) 123-4567</span></div>
+            </div>
+            <div class="contact-row">
+              <span class="ci" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+              <div><div class="label">Località</div><span class="value">Springfield, USA</span></div>
+            </div>
+            <div>
+              <div class="label" style="font-size:0.78rem;color:var(--muted-foreground);margin-bottom:8px;">Trovami online</div>
+              <div class="socials">
+                <a class="icon-btn" href="#" aria-label="GitHub"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.94c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.36-3.88-1.36-.53-1.34-1.3-1.7-1.3-1.7-1.06-.72.08-.71.08-.71 1.17.08 1.79 1.2 1.79 1.2 1.04 1.79 2.73 1.27 3.4.97.1-.76.41-1.27.74-1.56-2.55-.29-5.23-1.27-5.23-5.67 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.9 10.9 0 0 1 5.74 0c2.18-1.48 3.14-1.17 3.14-1.17.63 1.58.24 2.75.12 3.04.74.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.37-5.25 5.66.42.36.79 1.07.79 2.16v3.2c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg></a>
+                <a class="icon-btn" href="#" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14zM7.12 20.45H3.55V9h3.57v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg></a>
+                <a class="icon-btn" href="#" aria-label="Instagram"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><path d="M17.5 6.5h.01"/></svg></a>
+              </div>
+            </div>
+          </div>
+
+          <form class="form-grid reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="cName">Nome</label>
+                <input id="cName" name="name" type="text" required placeholder="Il tuo nome" />
+              </div>
+              <div class="field">
+                <label for="cEmail">Email</label>
+                <input id="cEmail" name="email" type="email" required placeholder="tu@esempio.com" />
+              </div>
+            </div>
+            <div class="field">
+              <label for="cSubject">Oggetto</label>
+              <input id="cSubject" name="subject" type="text" placeholder="Di cosa si tratta?" />
+            </div>
+            <div class="field">
+              <label for="cMessage">Messaggio</label>
+              <textarea id="cMessage" name="message" required placeholder="Scrivi il tuo messaggio..."></textarea>
+            </div>
+            <button class="btn btn-primary btn-block" type="submit">
+              Invia messaggio
+              <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m22 2-7 20-4-9-9-4 20-7z"/></svg>
+            </button>
+            <p class="form-note">Questo è un modulo dimostrativo — i messaggi vengono validati e confermati localmente, nessun dato viene inviato a un server.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Alex Rivera. Tutti i diritti riservati.</p>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#home">Home</a>
+        <a href="#about">Chi sono</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contatti</a>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- ================= MODALS / OVERLAYS ================= -->
+  <div class="modal-overlay" id="loginModal" role="dialog" aria-modal="true" aria-labelledby="loginTitle">
+    <div class="modal">
+      <div class="modal-head">
+        <h3 id="loginTitle">Accesso Admin</h3>
+        <button class="icon-btn" data-close type="button" aria-label="Chiudi"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm" class="form-grid">
+          <div class="field">
+            <label for="adminPass">Password</label>
+            <input id="adminPass" type="password" placeholder="Inserisci la password admin" autocomplete="current-password" />
+          </div>
+          <p class="form-note">Password demo: <strong>admin123</strong>. Sblocca la gestione dei contenuti (aggiungi / modifica / elimina). Funziona solo lato browser.</p>
+          <button class="btn btn-primary btn-block" type="submit">Sblocca modifica</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="formModal" role="dialog" aria-modal="true" aria-labelledby="formModalTitle">
+    <div class="modal modal-lg">
+      <div class="modal-head">
+        <h3 id="formModalTitle">Aggiungi elemento</h3>
+        <button class="icon-btn" data-close type="button" aria-label="Chiudi"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+      </div>
+      <div class="modal-body" id="formModalBody"></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Anteprima immagine">
+    <button class="lightbox-close" data-close type="button" aria-label="Chiudi anteprima"><svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+    <img id="lightboxImg" src="" alt="Anteprima ingrandita" />
+  </div>
+
+  <div class="toast-wrap" id="toastWrap" aria-live="polite"></div>
+
+  <script src="/js/data.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+</html>
